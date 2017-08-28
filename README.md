@@ -10,6 +10,7 @@
 *****************************************
             AIS3 IoT Security
           By Prof. Shi-Cho, Cha
+    AIS3 Badge by power Li, idic, Zet
 *****************************************
 
  Available Command:
