@@ -36,7 +36,7 @@
 
 **chat room** : [tlk.io](https://tlk.io/ais3_2017_ble)
 
-**Environment** : [CP210x USB to UART](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+**driver** : [CP210x USB to UART](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
 **rate baud** : 115200
 
@@ -62,3 +62,9 @@
 
 
 > More Info: https://github.com/x43x61x69/HITCON-Badge
+
+
+## thanks
+
+**power Li@NTUST**
+**idic@NTUST**
