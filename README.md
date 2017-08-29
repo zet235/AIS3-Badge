@@ -40,20 +40,21 @@
 
 - driver : [CP210x USB to UART](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 - serial package for python2.7 : [pyserial](https://pypi.python.org/pypi/pyserial/2.7)
-- `exp` directory include pyserial if you don't want use pip to install ,you can `cd` to exp directory and run python script
+- `exp` directory include pyserial if you don't want to use pip to install, you can `cd` to exp directory and run python script
 
 **How to connect**
 
 - rate baud : `115200`
-- windows `COM3`
-- linux `/dev/ttyUSB0`
-- osx `/dev/tty.SLAB_USBtoUART`
+- Windows `COM3` 
+  > Check your Device Manager COM port
+- Linux `/dev/ttyUSB0`
+- macOS `/dev/tty.SLAB_USBtoUART`
 
-you can run test.py to test
+you can run `test.py` to test
 
 ## challenge
 
-**challenge 1**
+**challenge 1 :**
 
 ``` diff
 #---------------------------------------------------------------------------------------------
@@ -63,15 +64,16 @@ you can run test.py to test
 #---------------------------------------------------------------------------------------------
 ```
 
+> ID   : your name  (6 bytes)  
+R    : random (3 bytes)  
+key  : random (3 bytes) + count (1 byte) + count shift 8 (1 byte) + count shift 16 (1 byte)  
+SIG  : hmac out put (use ID to be the message)  
+SIG1 : SIG first byte  
+SIG2 : SIG second byte  
+SIG3 : SIG thired byte  
 
-> ID   : your name  
-R    : random  
-SIG1 : random[1]  
-SIG2 : random[2] shift 8  
-SIG3 : random[3] shift 16
 
-
-**challenge 3**
+**challenge 3  :**
 
 ```diff
 #--------------------------------------------------------------
@@ -87,8 +89,8 @@ SIG3 : random[3] shift 16
 
 ## thanks
 
-**power Li@NTUST**
+power Li@NTUST
 
-**idic@NTUST**
+idic@NTUST
 
 > More Info: https://github.com/x43x61x69/HITCON-Badge
