@@ -60,6 +60,7 @@
 #--------------------------------------------------------------
 ```
 
+**exploit is python2 version**
 
 > More Info: https://github.com/x43x61x69/HITCON-Badge
 

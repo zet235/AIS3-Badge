@@ -19,7 +19,7 @@ print "bid : " + bid.encode('hex')
 ser.write("b" + bid)
 time.sleep(0.5)
 
-key = name + "ais3b3"
+key = name + "xxxxxx"
 print "key : " + key.encode('hex')
 ser.write("k" + key)
 
