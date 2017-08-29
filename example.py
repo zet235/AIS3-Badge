@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 import serial, time
 import hmac, hashlib
@@ -13,7 +13,7 @@ def exp(i):
     #---------------------------------------------------------------------------------------------
 
     company_name = "\x46\x00"
-    name = "AIS666"
+    name = "aisxxx"
     random_num = [0x01, 0x02, 0x03]
     count = i
 

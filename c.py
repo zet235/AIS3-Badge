@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 import serial, time
 import hmac, hashlib
@@ -12,7 +12,7 @@ ser = serial.Serial('/dev/tty.SLAB_USBtoUART', 115200, timeout=1)
 #--------------------------------------------------------------
 
 company_name = "\x46\x00"
-name = "zet555"
+name = "aisxxx"
 bid = company_name + name
 print "bid : " + bid.encode('hex')
 
