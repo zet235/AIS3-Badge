@@ -34,13 +34,26 @@
 ```
 
 
-**chat room** : [tlk.io](https://tlk.io/ais3_2017_ble)
+**chat room** : [tlk.io/ais3_2017_ble](https://tlk.io/ais3_2017_ble)
 
-**driver** : [CP210x USB to UART](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+**Environment** :
 
-**rate baud** : 115200
+- driver : [CP210x USB to UART](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+- serial package for python2.7 : [pyserial](https://pypi.python.org/pypi/pyserial/2.7)
+- `exp` directory include pyserial if you don't want use pip to install ,you can `cd` to exp directory and run python script
 
-## challenge 1
+**How to connect**
+
+- rate baud : `115200`
+- windows `COM3`
+- linux `/dev/ttyUSB0`
+- osx `/dev/tty.SLAB_USBtoUART`
+
+you can run test.py to test
+
+## challenge
+
+**challenge 1**
 
 ``` diff
 #---------------------------------------------------------------------------------------------
@@ -50,7 +63,15 @@
 #---------------------------------------------------------------------------------------------
 ```
 
-## challenge 3
+
+> ID   : your name  
+R    : random  
+SIG1 : random[1]  
+SIG2 : random[2] shift 8  
+SIG3 : random[3] shift 16
+
+
+**challenge 3**
 
 ```diff
 #--------------------------------------------------------------
@@ -60,12 +81,14 @@
 #--------------------------------------------------------------
 ```
 
+> send ID and key(name + some string in challenge3.apk)
+
 **exploit is python2 version**
-
-> More Info: https://github.com/x43x61x69/HITCON-Badge
-
 
 ## thanks
 
 **power Li@NTUST**
+
 **idic@NTUST**
+
+> More Info: https://github.com/x43x61x69/HITCON-Badge
