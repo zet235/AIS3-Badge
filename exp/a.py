@@ -11,7 +11,7 @@ def exp(i):
 
     company_name = "\x46\x00"
     #name = "deaddeadbeef".decode('hex')
-    name = "zet666"
+    name = "AIS666"
     random_num = [0x01, 0x02, 0x03]
     count = i
 

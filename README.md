@@ -49,6 +49,7 @@
   > Check your Device Manager COM port
 - Linux `/dev/ttyUSB0`
 - macOS `/dev/tty.SLAB_USBtoUART`
+- [Using a Serial Port on VMware](https://www.vmware.com/support/ws55/doc/ws_devices_serial_host.html)
 
 you can run `test.py` to test
 

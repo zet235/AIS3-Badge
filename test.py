@@ -13,7 +13,8 @@ elif os_version == "Linux":
     ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
 
 
-#ser.write('\xde\xad\xbe\xef')
-ser.write('s')
+ser.write('\xde\xad\xbe\xef')
 ser.readline()
 print ser.readline()
+time.sleep(2)
+ser.write('s')

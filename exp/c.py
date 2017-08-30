@@ -9,7 +9,7 @@ import serial, hmac, hashlib
 ser = serial.Serial('/dev/tty.SLAB_USBtoUART', 115200, timeout=1)
 
 company_name = "\x46\x00"
-name = "zet666"
+name = "AIS666"
 bid = company_name + name
 print "bid : " + bid.encode('hex')
 
